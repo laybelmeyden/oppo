@@ -56,12 +56,22 @@ class MainController extends Controller
             'date' => request('date'),
             'app' => request('app'),
         );
-        \Mail::send('email.mailmain', $data, function($message1) use($data)
-        {   
-            $mail_admin = env('MAIL_ADMIN_FORM');
-            $message1->from($data['email'], $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['model'], $data['shop'], $data['date'], $data['app']);
-            $message1->to($mail_admin, 'For Admin')->subject('Message from site');
-           
+        $to_name = env("MAIL_ADMIN_NAMEFORM");
+        $to_email = env("MAIL_ADMIN_FORM");
+        $data = array(
+            'name_fill' => request('name_fill'),
+            'years' => request('years'),
+            'city' => request('city'),
+            'numb' => request('numb'),
+            'email' => request('email'),
+            'model' => request('model'),
+            'shop' => request('shop'),
+            'date' => request('date'),
+            'app' => request('app'),
+        );
+        Mail::send('email.mailcontact', $data, function ($message) use ($data, $to_email, $to_name) {
+            $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['app']);
+            $message->to($to_email)->subject('Message from site');
         });
 
         back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
