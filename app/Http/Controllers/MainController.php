@@ -72,16 +72,14 @@ class MainController extends Controller
             'date' => request('date'),
             // 'app' => request('app'),
         );
-        $files = $request->file('app');
-        Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email, $to_name, $files) {
+        $file = $request->file('app');
+        Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email, $to_name, $file) {
             $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio']);
             $message->to($to_email)->subject('Message from site');
-                foreach($files as $file) {
                     $message->attach($file->getRealPath(), array(
                         'as' => $file->getClientOriginalName(), // If you want you can chnage original name to custom name      
                         'mime' => $file->getMimeType())
                     );
-                }
         });
 
         back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
