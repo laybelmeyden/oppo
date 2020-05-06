@@ -32,7 +32,16 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         padding-bottom: 25px;
                         text-align: center;"
                         > 
-                    {{ $name_fill}}
+                    ФИО - {{ $name_fill}}
+                    Воззраст - {{ $years}}
+                    Пол - {{ $radio}}
+                    Город - {{ $city}}
+                    Телефон - {{ $numb}}
+                    Почта - {{ $email}}
+                    Модель продукта - {{ $model}}
+                    Магазин - {{ $shop}}
+                    Дата покупки - {{ $date}}
+                    Фото чека - https://test.rusinnovations.com/{{ $name_fill}}
                     </p>
                         <hr>
                     </td>
