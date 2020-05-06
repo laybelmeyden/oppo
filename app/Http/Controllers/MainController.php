@@ -76,7 +76,7 @@ class MainController extends Controller
             $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio']);
             $message->to($to_email)->subject('Message from site');
             $message->attach($data['app']->getRealPath(), array(
-                'as' => 'app.' . $data['app']->getClientOriginalExtension(),
+                'as' => 'app.' . $data['app']->getClientOriginalExtension(), 
                 'mime' => $data['app']->getMimeType())
             );
         });

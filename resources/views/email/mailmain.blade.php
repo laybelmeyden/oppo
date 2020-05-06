@@ -42,7 +42,6 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                     Магазин - {{ $shop}}<br>
                     Дата покупки - {{ $date}}<br>
                     Фото чека - <a href="https://test.rusinnovations.com/{{ $app}}">https://test.rusinnovations.com/{{ $app }}</a><br>
-                    {{ $app->embed($pathToFile) }}
                     </p>
                         <hr>
                     </td>
