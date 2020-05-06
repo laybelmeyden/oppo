@@ -32,7 +32,7 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         padding-bottom: 25px;
                         text-align: center;"
                         > 
-                    {{name_fill}}
+                    {{ $name_fill}}
                     </p>
                         <hr>
                     </td>
