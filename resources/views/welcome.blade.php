@@ -281,7 +281,9 @@
                 <form-file></form-file>
                 <div class="alert">
                     @foreach ($errors-> all() as $error)
-                    {{ $error}}
+                    <script>
+                    alert('необходимо прикрепить фото чека!')
+                    </script>
                     @endforeach
                 </div>
                 <div class="clear"></div>
