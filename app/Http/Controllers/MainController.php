@@ -71,7 +71,7 @@ class MainController extends Controller
             'app' => request('app'),
         );
         Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email, $to_name) {
-            $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['app']);
+            $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio'], $data['app']);
             $message->to($to_email)->subject('Message from site');
         });
 
