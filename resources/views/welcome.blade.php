@@ -280,7 +280,7 @@
                 <div class="clear"></div>
                 <form-file></form-file>
                 <div class="alert">
-                    @foreach ($errirs-> all() as $error)
+                    @foreach ($errors-> all() as $error)
                     {{ $error}}
                     @endforeach
                 </div>
