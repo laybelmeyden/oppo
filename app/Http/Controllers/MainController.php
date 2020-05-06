@@ -74,12 +74,15 @@ class MainController extends Controller
         );
         $file = $request->file('app');
         Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email, $to_name, $file) {
-            $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio']);
+            $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio'], $data['app']);
             $message->to($to_email)->subject('Message from site');
-                    $message->attach($file->getRealPath(), array(
-                        'as' => $file->getClientOriginalName(), // If you want you can chnage original name to custom name      
-                        'mime' => $file->getMimeType())
-                    );
+            return $this->view('public/upload')
+            ->subject('Document Upload')
+            ->attach($this->data['app']->getRealPath(),
+            [
+                'as' => $this->data['app']->getClientOriginalName(),
+                'mime' => $this->data['app']->getClientMimeType(),
+            ]);
         });
 
         back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
