@@ -32,16 +32,16 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         padding-bottom: 25px;
                         text-align: center;"
                         > 
-                    ФИО - {{ $name_fill}}
-                    Воззраст - {{ $years}}
-                    Пол - {{ $radio}}
-                    Город - {{ $city}}
-                    Телефон - {{ $numb}}
-                    Почта - {{ $email}}
-                    Модель продукта - {{ $model}}
-                    Магазин - {{ $shop}}
-                    Дата покупки - {{ $date}}
-                    Фото чека - https://test.rusinnovations.com/{{ $name_fill}}
+                    ФИО - {{ $name_fill}}<br>
+                    Возраст - {{ $years}}<br>
+                    Пол - {{ $radio}}<br>
+                    Город - {{ $city}}<br>
+                    Телефон - {{ $numb}}<br>
+                    Почта - {{ $email}}<br>
+                    Модель продукта - {{ $model}}<br>
+                    Магазин - {{ $shop}}<br>
+                    Дата покупки - {{ $date}}<br>
+                    Фото чека - <a href="https://test.rusinnovations.com/{{ $app}}">https://test.rusinnovations.com/{{ $app}}</a><br>
                     </p>
                         <hr>
                     </td>
