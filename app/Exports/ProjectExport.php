@@ -15,12 +15,12 @@ class ProjectExport implements FromCollection,WithHeadings,ShouldAutoSize
     
       public function headings(): array {
         return [
-        "Название проекта","ФИО руководителя","app"
+        "Название проекта","Возраст","Пол","Город","Телефон","Почта","Модель продукта","Магазин","Дата покупки","Ссылка на файл"
         ];
       }
 
       public function collection()
       {
-          return Filform::select('name_fill','years', 'app')->get();
+          return Filform::select('name_fill','years','radio','city','numb','email','model','shop','date', 'app')->get();
       }
 }
