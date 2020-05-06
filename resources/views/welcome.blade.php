@@ -185,7 +185,7 @@
     <div id="zb1" class="z-box z-box-1">
         <div class="close"></div>
         <div class="formbox">
-            <form action="/upload_from" method="POST" enctype="multipart/form-data" id="app">
+            <form action="/upload_from" method="POST" id="app" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <input type="text" size="50" name="fn" class="fn" value="Принять участие">
                 <input type="text" size="50" name="name_fill" autocomplete="off" placeholder="ФИО*" required>
