@@ -58,7 +58,7 @@ class MainController extends Controller
         );
         \Mail::send('email.mailmain', $data, function($message1) use($data)
         {   
-            $mail_admin = env('MAIL_ADMIN_PODPISKAJURNAL');
+            $mail_admin = env('MAIL_ADMIN_FORM');
             $message1->from($data['email'], $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['model'], $data['shop'], $data['date'], $data['app']);
             $message1->to($mail_admin, 'For Admin')->subject('Message from site');
            
