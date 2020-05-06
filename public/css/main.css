@@ -1,0 +1,2905 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: "OPPOSANS-H";
+    src: url('../fonts/OPPOSANS-HEAVY.eot');
+    src: url('../fonts/OPPOSANS-HEAVY.eot?#iefix') format('embedded-opentype'), url('../fonts/OPPOSANS-HEAVY.otf') format('opentype'), url('../fonts/OPPOSANS-HEAVY.svg'), url('../fonts/OPPOSANS-HEAVY.woff') format('woff'), url('../fonts/OPPOSANS-HEAVY.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OPPOSANS-B";
+    src: url('../fonts/OPPOSANS-BOLD.eot');
+    src: url('../fonts/OPPOSANS-BOLD.eot?#iefix') format('embedded-opentype'), url('../fonts/OPPOSANS-BOLD.otf') format('opentype'), url('../fonts/OPPOSANS-BOLD.svg'), url('../fonts/OPPOSANS-BOLD.woff') format('woff'), url('../fonts/OPPOSANS-BOLD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OPPOSANS-M";
+    src: url('../fonts/OPPOSANS-MEDIUM.eot');
+    src: url('../fonts/OPPOSANS-MEDIUM.eot?#iefix') format('embedded-opentype'), url('../fonts/OPPOSANS-MEDIUM.otf') format('opentype'), url('../fonts/OPPOSANS-MEDIUM.svg'), url('../fonts/OPPOSANS-MEDIUM.woff') format('woff'), url('../fonts/OPPOSANS-MEDIUM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OPPOSANS-R";
+    src: url('../fonts/OPPOSANS-REGULAR.eot');
+    src: url('../fonts/OPPOSANS-REGULAR.eot?#iefix') format('embedded-opentype'), url('../fonts/OPPOSANS-REGULAR.otf') format('opentype'), url('../fonts/OPPOSANS-REGULAR.svg'), url('../fonts/OPPOSANS-REGULAR.woff') format('woff'), url('../fonts/OPPOSANS-REGULAR.ttf') format('truetype');
+}
+
+
+/* body */
+
+html,
+body {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-size: 16px;
+    text-indent: 0;
+    text-align: justify;
+    line-height: 24px;
+    width: 100%;
+    min-width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: #000000;
+    background: #ffffff;
+    -webkit-text-size-adjust: none;
+    position: relative;
+}
+
+@media all and (max-width: 1160px) {
+    html,
+    body {
+        min-width: 1010px;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    html,
+    body {
+        min-width: 710px;
+    }
+}
+
+@media all and (max-width: 720px) {
+    html,
+    body {
+        min-width: 400px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: #046a38;
+}
+
+::-webkit-scrollbar-corner {
+    background: #ffffff;
+}
+
+::-webkit-resizer {
+    background: #ffffff;
+}
+
+::selection {
+    color: #ffffff;
+    background: #046a38;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #046a38;
+}
+
+body img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+}
+
+a:active {
+    color: #000000;
+}
+
+a:hover,
+a:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+/* page */
+
+#page {
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* box-1 */
+
+#box-1-w {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: url('../images/bg.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#box-1 {
+    width: 1100px;
+    padding: 140px 0 110px 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    z-index: 5;
+}
+
+#box-1 img {
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    z-index: auto;
+}
+
+#box-1 a.logo {
+    width: 148px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 74px);
+    z-index: 10;
+    background: url('../images/logo.png') no-repeat top center;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+#box-1 h1 {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    cursor: default;
+}
+
+#box-1 h4 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: #000000;
+    cursor: default;
+}
+
+#box-1 h5 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    font-size: 11px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: auto;
+    cursor: default;
+}
+
+#box-1 a.link-1 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#box-1 a.link-1:hover {
+    color: #046a38;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+#box-1 p {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 70px 0 0 0;
+    color: #000000;
+    cursor: default;
+    float: left;
+}
+
+.p1-1 {
+    margin: 40px 40px 0 0;
+    background: url('../images/1.png') no-repeat 0 0;
+    -webkit-background-size: 56px auto;
+    -moz-background-size: 56px auto;
+    -o-background-size: 56px auto;
+    background-size: 56px auto;
+}
+
+.p1-2 {
+    margin: 40px 40px 0 0;
+    background: url('../images/2.png') no-repeat 0 0;
+    -webkit-background-size: 56px auto;
+    -moz-background-size: 56px auto;
+    -o-background-size: 56px auto;
+    background-size: 56px auto;
+}
+
+.p1-3 {
+    margin: 40px 0 0 0;
+    background: url('../images/3.png') no-repeat 0 0;
+    -webkit-background-size: 56px auto;
+    -moz-background-size: 56px auto;
+    -o-background-size: 56px auto;
+    background-size: 56px auto;
+}
+
+#box-1 p span {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #046a38;
+    display: inline-block;
+}
+
+.button-1 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 26px;
+    line-height: 26px;
+    height: 40px;
+    padding: 10px 55px 0 25px;
+    margin: 50px 0 0 0;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #000000;
+    background: none;
+    border: 2px solid #000000;
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+
+.arrow {
+    width: 10px;
+    height: 18px;
+    float: right;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    background: url('../images/arr1.svg') no-repeat 0 0;
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 20px;
+    z-index: 7;
+}
+
+.button-1:hover .arrow {
+    background: url('../images/arr2.svg') no-repeat 0 0;
+}
+
+.button-1:hover {
+    color: #ffffff;
+    background: #046a38;
+    border: 2px solid #046a38;
+    outline: none;
+}
+
+.button-1:hover,
+.button-1:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+#box-1 a.link-2 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #046a38;
+    border-bottom: 1px solid #046a38;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#box-1 a.link-2 span {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+}
+
+#box-1 a.link-2:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+@media all and (max-width: 1160px) {
+    #box-1 {
+        width: 960px;
+        padding: 140px 0 110px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: left;
+        z-index: 5;
+    }
+    #box-1 img {
+        width: 500px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 550px;
+        z-index: auto;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    #box-1 {
+        width: 660px;
+        padding: 140px 0 150px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: left;
+        z-index: 5;
+    }
+    #box-1 img {
+        width: 400px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 450px;
+        z-index: auto;
+    }
+    #box-1 h1 {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 34px;
+        line-height: 38px;
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        cursor: default;
+    }
+    #box-1 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        max-width: 355px;
+        margin: 20px 0 0 0;
+        color: #000000;
+        cursor: default;
+    }
+    #box-1 h4 br {
+        display: none;
+    }
+    #box-1 h5 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: italic;
+        text-align: left;
+        font-size: 11px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        max-width: 580px;
+        color: #000000;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        z-index: auto;
+        cursor: default;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #box-1 {
+        width: 360px;
+        padding: 100px 0 150px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        z-index: 5;
+    }
+    #box-1 h5 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: italic;
+        text-align: center;
+        font-size: 11px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        max-width: 580px;
+        color: #000000;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        z-index: auto;
+        cursor: default;
+    }
+    #box-1 img {
+        width: 100%;
+        padding: 0;
+        margin: 40px 0 0 20px;
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        z-index: auto;
+    }
+    #box-1 a.logo {
+        width: 148px;
+        height: 36px;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 74px);
+        z-index: 10;
+        background: url('../images/logo.png') no-repeat top center;
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+    #box-1 h1 {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 345px;
+        color: #000000;
+        cursor: default;
+    }
+    #box-1 h1 br {
+        display: none;
+    }
+    #box-1 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        max-width: 355px;
+        margin: 20px auto 0 auto;
+        color: #000000;
+        cursor: default;
+    }
+    #box-1 h4 br {
+        display: none;
+    }
+    #box-1 a.link-1 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 11px;
+        line-height: 11px;
+        padding: 0;
+        margin: 10px auto 0 auto;
+        color: #000000;
+        border-bottom: 1px solid #000000;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #box-1 a.link-1:hover {
+        color: #046a38;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
+    #box-1 p {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        width: 110px;
+        padding: 70px 0 0 0;
+        color: #000000;
+        cursor: default;
+        float: left;
+    }
+    #box-1 p br {
+        display: none;
+    }
+    .p1-1 {
+        margin: 30px 0 0 0;
+        background: url('../images/1.png') no-repeat top center;
+        -webkit-background-size: 56px auto;
+        -moz-background-size: 56px auto;
+        -o-background-size: 56px auto;
+        background-size: 56px auto;
+    }
+    .p1-2 {
+        margin: 30px 15px 0 15px;
+        background: url('../images/2.png') no-repeat top center;
+        -webkit-background-size: 56px auto;
+        -moz-background-size: 56px auto;
+        -o-background-size: 56px auto;
+        background-size: 56px auto;
+    }
+    .p1-3 {
+        margin: 30px 0 0 0;
+        background: url('../images/3.png') no-repeat top center;
+        -webkit-background-size: 56px auto;
+        -moz-background-size: 56px auto;
+        -o-background-size: 56px auto;
+        background-size: 56px auto;
+    }
+    #box-1 p span {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #046a38;
+        display: inline-block;
+    }
+}
+
+
+/* box-2 */
+
+#box-2-w {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #f2f2f0;
+}
+
+#box-2-w::after {
+    content: '';
+    width: 100%;
+    height: 240px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: url('../images/5.png') no-repeat top center;
+}
+
+#box-2 {
+    width: 1100px;
+    min-height: 138px;
+    padding: 50px 0 0 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+#box-2 h2 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    cursor: default;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+#box-2 h2 span {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    cursor: default;
+    display: inline-block;
+}
+
+#box-2 h4 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 26px;
+    line-height: 34px;
+    width: calc(50% - 50px);
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #000000;
+    cursor: default;
+    float: right;
+    position: relative;
+    z-index: 10;
+}
+
+.box-2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.box-2-img {
+    width: 50%;
+    height: 412px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: auto;
+}
+
+.box-2-left .box-2-img {
+    left: 0;
+}
+
+.box-2-right .box-2-img {
+    right: 0;
+}
+
+.box-2-img img {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: auto;
+    display: block;
+}
+
+.box-2-left .box-2-img img {
+    right: 0;
+}
+
+.box-2-right .box-2-img img {
+    left: 0;
+}
+
+.box-2-text {
+    width: 500px;
+    min-height: 312px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-2-left .box-2-text {
+    padding: 50px 0 48px 50px;
+    margin: 0 0 0 50%;
+    float: left;
+}
+
+.box-2-right .box-2-text {
+    padding: 50px 50px 50px 0;
+    margin: 0 50% 0 0;
+    float: right;
+}
+
+.box-2 h5 {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    cursor: default;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.box-2-left h5 {
+    left: 50px;
+}
+
+.box-2-right h5 {
+    left: 0;
+}
+
+.box-2 h5 a {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    margin: 5px 0 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.box-2 h5 a:hover {
+    color: #046a38;
+}
+
+.box-2 p {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    cursor: default;
+    position: relative;
+    z-index: 10;
+}
+
+.sp2-1 {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.sp2-4 {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 22px;
+}
+
+.sp2-2 {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    height: 60px;
+    padding: 0;
+    display: inline-block;
+}
+
+.sp2-3 {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+}
+
+@media all and (max-width: 1160px) {
+    #box-2-w::after {
+        content: '';
+        width: 100%;
+        height: 240px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background: url('../images/5.png') no-repeat top center;
+    }
+    #box-2 {
+        width: 960px;
+        min-height: 138px;
+        padding: 50px 0 0 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-2 h2 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        cursor: default;
+        float: left;
+        position: relative;
+        z-index: 10;
+    }
+    #box-2 h2 span {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0;
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        cursor: default;
+        display: inline-block;
+    }
+    #box-2 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 26px;
+        line-height: 34px;
+        width: calc(50% - 50px);
+        padding: 0;
+        margin: 10px 0 0 0;
+        color: #000000;
+        cursor: default;
+        float: right;
+        position: relative;
+        z-index: 10;
+    }
+    .box-2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+    .box-2-img {
+        width: 50%;
+        height: 435px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        z-index: auto;
+    }
+    .box-2-left .box-2-img {
+        left: 0;
+    }
+    .box-2-right .box-2-img {
+        right: 0;
+    }
+    .box-2-img img {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        z-index: auto;
+        display: block;
+    }
+    .box-2-left .box-2-img img {
+        right: 0;
+    }
+    .box-2-right .box-2-img img {
+        left: 0;
+    }
+    .box-2-text {
+        width: 430px;
+        min-height: 335px;
+        overflow: hidden;
+        position: relative;
+    }
+    .box-2-left .box-2-text {
+        padding: 50px 0 50px 50px;
+        margin: 0 0 0 50%;
+        float: left;
+    }
+    .box-2-right .box-2-text {
+        padding: 50px 50px 50px 0;
+        margin: 0 50% 0 0;
+        float: right;
+    }
+    .box-2 p {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        cursor: default;
+        position: relative;
+        z-index: 10;
+    }
+    .sp2-1 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sp2-2 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 52px;
+        height: 60px;
+        padding: 0;
+        display: inline-block;
+    }
+    .sp2-3 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    #box-2-w::after {
+        content: '';
+        width: 100%;
+        height: 220px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background: #046a38;
+    }
+    #box-2 {
+        width: 660px;
+        min-height: 138px;
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-2 h2 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        cursor: default;
+        float: none;
+        position: relative;
+        z-index: 10;
+    }
+    #box-2 h2 span {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0;
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        cursor: default;
+        display: inline-block;
+    }
+    #box-2 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 26px;
+        line-height: 34px;
+        width: 100%;
+        padding: 0;
+        margin: 110px 0 0 0;
+        color: #000000;
+        cursor: default;
+        float: none;
+        position: relative;
+        z-index: 10;
+    }
+    .box-2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+    .box-2-img {
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        max-height: 400px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: auto;
+        z-index: auto;
+    }
+    .box-2-left .box-2-img {
+        left: auto;
+    }
+    .box-2-right .box-2-img {
+        right: auto;
+    }
+    .box-2-img img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        top: auto;
+        z-index: auto;
+        display: block;
+    }
+    .box-2-left .box-2-img img {
+        right: auto;
+    }
+    .box-2-right .box-2-img img {
+        left: auto;
+    }
+    .box-2-text {
+        width: 660px;
+        min-height: 5px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+    }
+    .box-2-left .box-2-text {
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        float: none;
+    }
+    .box-2-right .box-2-text {
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        float: none;
+    }
+    .box-2 h5 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0;
+        margin: 50px 0 0 0;
+        color: #000000;
+        cursor: default;
+        display: inline-block;
+        position: relative;
+        bottom: auto;
+        z-index: 10;
+    }
+    .box-2-left h5 {
+        left: auto;
+    }
+    .box-2-right h5 {
+        left: auto;
+    }
+    .box-2 h5 a {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0;
+        margin: 5px 0 0 0;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .box-2 h5 a:hover {
+        color: #046a38;
+    }
+    .box-2 p {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        cursor: default;
+        position: relative;
+        z-index: 10;
+    }
+    .sp2-1 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sp2-2 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 52px;
+        height: 60px;
+        padding: 0;
+        display: inline-block;
+    }
+    .sp2-3 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #box-2-w::after {
+        content: '';
+        width: 100%;
+        height: 190px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background: #046a38;
+    }
+    #box-2 {
+        width: 360px;
+        min-height: 138px;
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-2 h2 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        cursor: default;
+        float: none;
+        position: relative;
+        z-index: 10;
+    }
+    #box-2 h2 span {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0;
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        cursor: default;
+        display: inline-block;
+    }
+    #box-2 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        line-height: 26px;
+        width: 100%;
+        padding: 0;
+        margin: 90px 0 0 0;
+        color: #000000;
+        cursor: default;
+        float: none;
+        position: relative;
+        z-index: 10;
+    }
+    .box-2 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+    .box-2-img {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        max-height: inherit;
+        overflow: inherit;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: auto;
+        z-index: auto;
+        background: #ccc;
+    }
+    .box-2-left .box-2-img {
+        left: auto;
+    }
+    .box-2-right .box-2-img {
+        right: auto;
+    }
+    .box-2-img img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        top: auto;
+        z-index: auto;
+        display: block;
+    }
+    .box-2-left .box-2-img img {
+        right: auto;
+    }
+    .box-2-right .box-2-img img {
+        left: auto;
+    }
+    .box-2-text {
+        width: 360px;
+        min-height: 5px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+    }
+    .box-2-left .box-2-text {
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        float: none;
+    }
+    .box-2-right .box-2-text {
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+        float: none;
+    }
+    .box-2 p {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        cursor: default;
+        position: relative;
+        z-index: 10;
+    }
+    .br360 {
+        display: none;
+    }
+    .sp2-1 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sp2-2 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 52px;
+        height: 60px;
+        padding: 0;
+        display: inline-block;
+    }
+    .sp2-3 {
+        font-family: "OPPOSANS-H";
+        font-weight: normal;
+    }
+}
+
+
+/* box-3 */
+
+#box-3-w {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #ffffff;
+}
+
+#box-3 {
+    width: 1100px;
+    padding: 60px 0 70px 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+#box-3 h2 {
+    font-family: "OPPOSANS-B";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0;
+    margin: 0;
+    color: #046a38;
+    cursor: default;
+}
+
+#box-3 h4 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+    padding: 0;
+    margin: 20px 0 60px 0;
+    color: #393939;
+    cursor: default;
+}
+
+#box-3 a {
+    padding: 0;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+#box-3 a img {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#box-3 a:hover img {
+    opacity: 0.5;
+}
+
+#box-3 a:hover img,
+#box-3 a:not(:hover) img {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+.button-3 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 26px;
+    line-height: 26px;
+    height: 40px;
+    padding: 10px 55px 0 25px;
+    margin: 60px auto 0 auto;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #000000;
+    background: none;
+    border: 2px solid #000000;
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+
+.arrow {
+    width: 10px;
+    height: 18px;
+    float: right;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    background: url('../images/arr1.svg') no-repeat 0 0;
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 20px;
+    z-index: 7;
+}
+
+.button-3:hover .arrow {
+    background: url('../images/arr2.svg') no-repeat 0 0;
+}
+
+.button-3:hover {
+    color: #ffffff;
+    background: #046a38;
+    border: 2px solid #046a38;
+    outline: none;
+}
+
+.button-3:hover,
+.button-3:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+@media all and (max-width: 1160px) {
+    #box-3 {
+        width: 960px;
+        padding: 60px 0 70px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-3 h2 {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 38px;
+        line-height: 44px;
+        padding: 0;
+        margin: 0;
+        color: #046a38;
+        cursor: default;
+    }
+    #box-3 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0;
+        margin: 20px 0 60px 0;
+        color: #393939;
+        cursor: default;
+    }
+    .box-3 {
+        max-width: 660px;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+    #box-3 a {
+        padding: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+    #box-3 a img {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    #box-3 {
+        width: 660px;
+        padding: 50px 0 60px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-3 h2 {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 36px;
+        line-height: 40px;
+        padding: 0;
+        margin: 0;
+        color: #046a38;
+        cursor: default;
+    }
+    #box-3 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0;
+        max-width: 600px;
+        margin: 20px auto 60px auto;
+        color: #393939;
+        cursor: default;
+    }
+    .box-3 {
+        max-width: 660px;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+    #box-3 a {
+        padding: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+    #box-3 a img {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    .button-3 {
+        margin: 50px auto 0 auto;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #box-3 {
+        width: 360px;
+        padding: 50px 0 60px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    #box-3 h2 {
+        font-family: "OPPOSANS-B";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+        padding: 0;
+        margin: 0;
+        color: #046a38;
+        cursor: default;
+    }
+    #box-3 h4 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0;
+        max-width: 340px;
+        margin: 20px auto 40px auto;
+        color: #393939;
+        cursor: default;
+    }
+    .box-3 {
+        max-width: 660px;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+    #box-3 a {
+        padding: 0;
+        margin: 5px 10px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    }
+    #box-3 a img {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    .button-3 {
+        margin: 40px auto 0 auto;
+    }
+}
+
+
+/* bottom */
+
+#bottom-w {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #046a38;
+}
+
+#bottom {
+    width: 1100px;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.pb-1 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    cursor: default;
+    float: left;
+}
+
+.pb-1 a {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+}
+
+.pb-1 a.fb {
+    background: url('../images/fb.svg') no-repeat 0 0;
+}
+
+.pb-1 a.ig {
+    background: url('../images/insta.svg') no-repeat 0 0;
+}
+
+.pb-1 a:hover {
+    opacity: 0.5;
+}
+
+.pb-2 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    width: 210px;
+    padding: 0;
+    margin: 0 auto;
+    color: #ffffff;
+    cursor: default;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 105px);
+    z-index: auto;
+}
+
+.pb-3 {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    cursor: default;
+    float: right;
+}
+
+.pb-2 a,
+.pb-3 a {
+    font-family: "OPPOSANS-R";
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pb-2 a:hover,
+.pb-3 a:hover {
+    opacity: 0.5;
+}
+
+@media all and (max-width: 1160px) {
+    #bottom {
+        width: 960px;
+        padding: 20px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    #bottom {
+        width: 660px;
+        padding: 40px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    .pb-1 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+        margin: 0 auto;
+        color: #ffffff;
+        cursor: default;
+        float: none;
+        display: inline-block;
+    }
+    .pb-1 a {
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        margin: 0 0 0 10px;
+        color: #ffffff;
+        cursor: pointer;
+        float: right;
+    }
+    .pb-1 a.fb {
+        background: url('../images/fb.svg') no-repeat 0 0;
+    }
+    .pb-1 a.ig {
+        background: url('../images/insta.svg') no-repeat 0 0;
+    }
+    .pb-1 a:hover {
+        opacity: 0.5;
+    }
+    .pb-2 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        width: 100%;
+        padding: 0;
+        margin: 10px auto;
+        color: #ffffff;
+        cursor: default;
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        z-index: auto;
+    }
+    .pb-3 {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        cursor: default;
+        float: none;
+    }
+    .pb-2 a,
+    .pb-3 a {
+        font-family: "OPPOSANS-R";
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .pb-2 a:hover,
+    .pb-3 a:hover {
+        opacity: 0.5;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #bottom {
+        width: 360px;
+        padding: 40px 0;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+}
+
+
+/* wrapper */
+
+.wrapper {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(4, 106, 56, 0.25);
+    z-index: 100;
+}
+
+
+/* close */
+
+.close {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    float: right;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    background: url('../images/close.png') no-repeat 0 0;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    z-index: 207;
+}
+
+.close:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.close:hover,
+.close:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #046a38;
+    transition: width .6s ease;
+}
+
+
+/* thnx */
+
+.thnx {
+    width: 340px;
+    padding: 50px 50px 40px 50px;
+    margin: 0;
+    position: absolute;
+    left: calc(50% - 220px);
+    top: calc(50% - 80px);
+    z-index: 106;
+    background: #ffffff;
+    text-align: center;
+    -moz-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+}
+
+.thnx h2 {
+    font-family: "OPPOSANS-R";
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    cursor: default;
+}
+
+.thnx h2 span {
+    font-family: "OPPOSANS-H";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 36px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: #000000;
+    cursor: default;
+    display: inline-block;
+}
+
+@media all and (max-width: 720px) {
+    .thnx {
+        display: none;
+        width: 360px;
+        padding: 50px 0 40px 0;
+        margin: 0;
+        position: absolute;
+        left: calc(50% - 180px);
+        top: calc(50% - 80px);
+        z-index: 106;
+        background: #ffffff;
+        text-align: center;
+        -moz-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+/* z */
+
+.z-box {
+    display: none;
+    width: 340px;
+    padding: 40px 50px 40px 50px;
+    margin: 0;
+    position: fixed;
+    left: calc(50% - 220px);
+    z-index: 106;
+    background: #ffffff;
+    text-align: center;
+    -moz-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+}
+
+.z-box-1 {
+    top: calc(50% - 310px);
+}
+
+.formbox {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    position: relative;
+}
+
+.info-ico {
+    width: 20px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    z-index: 10;
+    background: url('../images/info.svg') no-repeat center center;
+    cursor: pointer;
+}
+
+.info-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    width: 160px;
+    padding: 10px;
+    margin: 0;
+    color: #333333;
+    background: #ffffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-box-shadow: 0 0 50px 0 rgba(8, 8, 8, 0.25);
+    -webkit-box-shadow: 0 0 50px 0 rgba(8, 8, 8, 0.25);
+    box-shadow: 0 0 50px 0 rgba(8, 8, 8, 0.25);
+    position: absolute;
+    bottom: 35px;
+    left: calc(50% - 90px);
+    z-index: 10;
+    cursor: default;
+    display: none;
+}
+
+.formbox select {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-indent: 0;
+    text-align: left;
+    height: 38px;
+    padding: 9px 15px 7px 15px;
+    border: 1px solid #d7d7d7;
+    margin: 0 0 5px 0;
+    float: left;
+    color: #333333;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    background: url('../images/select.svg') no-repeat calc(100% - 15px) center;
+}
+
+.formbox select.select-1 {
+    width: 140px;
+}
+
+.formbox select.select-2 {
+    width: 100%;
+}
+
+.radiobox {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 10px 0 0 15px;
+    float: left;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+}
+
+body:not(#Foo) input[type=radio] {
+    display: none;
+}
+
+body:not(#Foo) input[type=radio]+label {
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+body:not(#Foo) input[type=radio]:checked+label {
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+body:not(#Foo) input[type=radio]+label:after {
+    content: '';
+    display: block;
+    outline: none;
+    border: 1px solid #d7d7d7;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    z-index: 11;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+body:not(#Foo) input[type=radio]:checked+label:before {
+    content: '';
+    display: block;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    z-index: 11;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+    background: #046a38;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+.formbox input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-indent: 0;
+    text-align: left;
+    width: calc(100% - 32px);
+    height: 24px;
+    padding: 7px 15px 5px 15px;
+    border: 1px solid #d7d7d7;
+    margin: 0 0 5px 0;
+    float: left;
+    color: #333333;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+    background: none;
+}
+
+.formbox input:-moz-placeholder {
+    color: #d7d7d7;
+}
+
+.formbox input::-webkit-input-placeholder {
+    color: #d7d7d7;
+}
+
+.formbox input.error:-moz-placeholder {
+    color: #db264c;
+}
+
+.formbox input.error::-webkit-input-placeholder {
+    color: #db264c;
+}
+
+.formbox input.error {
+    color: #db264c;
+    border-color: #db264c;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+#filesel {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 60px 0 20px;
+    height: 38px;
+    margin: 0 auto;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 5;
+    background: url('../images/search.png') no-repeat calc(100% - 20px) center #046a38;
+}
+
+#filesel:hover {
+    opacity: 0.75;
+}
+
+#filesel:hover,
+#filesel:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+.spacing {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 16px;
+    line-height: 40px;
+    width: calc(100% - 42px);
+    height: 40px;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    position: relative;
+    cursor: default;
+    color: #d7d7d7;
+    border: 1px solid #d7d7d7;
+}
+
+.fileElem {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.MultiFile-wrap {
+    display: flex;
+}
+
+.formbox p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #333333;
+    display: block;
+    cursor: default;
+}
+
+.formbox p span {
+    font-size: 14px;
+    line-height: 12px;
+    color: #046a38;
+}
+
+.formbox .submit {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0 0;
+    float: left;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.formbox .submit input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+    line-height: 62px;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #ffffff;
+    background: #046a38;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+
+.formbox .submit input:hover {
+    opacity: 0.75;
+}
+
+.formbox .submit input:hover,
+.formbox .submit input:not(:hover) {
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+}
+
+.formbox a.link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    margin: 15px 0 0 0;
+    color: #333333;
+    border-bottom: 1px solid #333333;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.formbox a.link:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.formbox .checkbox {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 0 25px;
+    margin: 5px 0 0 0;
+    position: relative;
+    text-align: left;
+}
+
+.formbox .checkbox.checkbox2 {
+    margin: 15px 0 0 0;
+    float: left;
+}
+
+.formbox .checkbox input[type=checkbox] {
+    display: none;
+}
+
+.formbox .checkbox label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+}
+
+.formbox .checkbox label:after {
+    content: '';
+    display: block;
+    outline: none;
+    border: 1px solid #d7d7d7;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -25px;
+    top: 2px;
+    z-index: 11;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+.formbox .checkbox input[type=checkbox]:checked+label:before {
+    content: '';
+    display: block;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -22px;
+    top: 5px;
+    z-index: 11;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+    background: #046a38;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -khtml-border-radius: 100%;
+}
+
+@media all and (max-width: 720px) {
+    .z-box {
+        display: none;
+        width: 300px;
+        padding: 30px 30px 30px 30px;
+        margin: 0;
+        position: fixed;
+        left: calc(50% - 180px);
+        z-index: 106;
+        background: #ffffff;
+        text-align: center;
+        -moz-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 250px 0 rgba(0, 0, 0, 0.6);
+    }
+    .z-box-1 {
+        top: calc(50% - 280px);
+    }
+}
+
+input.fn {
+    display: none;
+}
+
+
+/* animation standart */
+
+.animated {
+    -webkit-animation-duration: .95s;
+    animation-duration: .95s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(20%, 0, 0);
+        transform: translate3d(20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(20%, 0, 0);
+        transform: translate3d(20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+}
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+}
+
+.fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(-20%, 0, 0);
+        transform: translate3d(-20%, 0, 0);
+    }
+}
+
+.fadeOutLeft {
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(20%, 0, 0);
+        transform: translate3d(20%, 0, 0);
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(20%, 0, 0);
+        transform: translate3d(20%, 0, 0);
+    }
+}
+
+.fadeOutRight {
+    -webkit-animation-name: fadeOutRight;
+    animation-name: fadeOutRight;
+}
+
+
+/* animation */
+
+.ani-1 {
+    visibility: hidden;
+}
+
+.ani-2 {
+    visibility: hidden;
+}
+
+.ani-3 {
+    visibility: hidden;
+}
+
+.ani-4 {
+    visibility: hidden;
+}
+
+.fadeInUp {
+    visibility: visible;
+}
+
+.fadeInDown {
+    visibility: visible;
+}
+
+.fadeInRight {
+    visibility: visible;
+}
+
+.fadeInLeft {
+    visibility: visible;
+}
+
+.d25s {
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+.d50s {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.d75s {
+    -webkit-animation-delay: .75s;
+    -moz-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+.d100s {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.d125s {
+    -webkit-animation-delay: 1.25s;
+    -moz-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+}
+
+.d150s {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.d175s {
+    -webkit-animation-delay: 1.75s;
+    -moz-animation-delay: 1.75s;
+    animation-delay: 1.75s;
+}
+
+.d200s {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@media all and (max-width: 1020px) {
+    .d25s,
+    .d50s,
+    .d75s,
+    .d100s,
+    .d125s,
+    .d150s,
+    .d175s,
+    .d200s {
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+}
+
+
+/* end */
