@@ -40,7 +40,7 @@
 
 </head>
 
-<body >
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSZP3C6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -279,6 +279,11 @@
                 </div>
                 <div class="clear"></div>
                 <form-file></form-file>
+                <div class="alert">
+                    @foreach ($errirs-> all() as $error)
+                    {{ $error}}
+                    @endforeach
+                </div>
                 <div class="clear"></div>
                 <!-- attach -->
                 <div class="clear"></div>

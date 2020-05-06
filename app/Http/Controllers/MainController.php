@@ -13,6 +13,9 @@ class MainController extends Controller
 {
     public function upload_from(Request $request)
     {
+        $this->validate(request(), [
+            'app' => 'required'
+        ]);
         if ($request->hasFile('app')) {
             Filform::create(
                 [
@@ -77,9 +80,9 @@ class MainController extends Controller
             $message->from($to_email, $data['name_fill'], $data['years'], $data['city'], $data['numb'], $data['email'], $data['model'], $data['shop'], $data['date'], $data['radio'], $data['app']);
             $message->to($to_email)->subject('Message from site');
             $message->attach($request->file('app')->getRealPath(), [
-                'as' => $request->file('app')->getClientOriginalName(), 
+                'as' => $request->file('app')->getClientOriginalName(),
                 'mime' => $request->file('app')->getMimeType()
-             ]);
+            ]);
         });
 
         back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');

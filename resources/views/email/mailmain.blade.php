@@ -41,7 +41,7 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                     Модель продукта - {{ $model}}<br>
                     Магазин - {{ $shop}}<br>
                     Дата покупки - {{ $date}}<br>
-                    Фото чека - <a href="https://test.rusinnovations.com/{{ $app}}">https://test.rusinnovations.com/{{ $app }}</a><br>
+                    Фото чека во вложении<br>
                     </p>
                         <hr>
                     </td>
