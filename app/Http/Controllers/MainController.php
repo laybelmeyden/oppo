@@ -70,7 +70,7 @@ class MainController extends Controller
             'model' => request('model'),
             'shop' => request('shop'),
             'date' => request('date'),
-            // 'app' => request('app'),
+            'app' => request('app'),
         );
         $file = $request->file('app');
         Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email, $to_name, $file) {
